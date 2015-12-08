@@ -1,0 +1,74 @@
+.menu {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu .menu-item {
+    display: inline;
+    float: left;
+    margin: 0 -0.1em 0 0;
+    padding: 0;
+    background:#34495e;
+}
+.menu .menu-item a {
+    text-decoration: none;
+    width: 13.12em;
+    display: block;
+    padding: .7em .74em;
+    color: ghostwhite;
+}
+.menu .submenu {
+    width: 14.512em;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: darkred;
+    list-style: none;
+    /*animation*/
+    opacity: 0;
+    -webkit-visibility: hidden;
+    -moz-visibility: hidden;
+    visibility: hidden;
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+.menu .menu-item:hover .submenu {
+    /*animation*/
+    opacity: 0.885;
+    -webkit-visibility: visible;
+    -moz-visibility: visible;
+    visibility: visible;
+}
+.menu .submenu-item {
+    text-align: center;
+    padding: 1% 0 1% 0;
+}
+.menu .submenu-item:hover {
+    -webkit-text-shadow: -.3em .2em .45em;
+    -moz-text-shadow: -.3em .2em .45em;
+    text-shadow: -.3em .2em .45em;
+    background-color: #012246;
+    -webkit-transform: scale(1.01,1.001);
+    -moz-transform: scale(1.01,1.001);
+    transform: scale(1.01,1.001);
+}
+.menu .menu-item:hover {
+    -webkit-text-shadow: -.3em .2em .45em;
+    -moz-text-shadow: -.3em .2em .45em;
+    text-shadow: -.3em .2em .45em;
+    background-color: darkred;
+
+}
+/*adaptive*/
+@media (max-width:1350px) {
+    .menu .menu-item {
+        display: inline-block;
+        float: none;
+    }
+    .menu .menu-item a {
+        float: none;
+        display: inline-block;
+    }
+}
